@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker stop image-nginx
-docker rm image-nginx
-docker rmi nginx:latest
+sudo docker stop image-nginx
+sudo docker rm image-nginx
+sudo docker rmi nginx:latest
 
