@@ -8,5 +8,8 @@ hooks:
     - location: scripts/install_docker.sh
       runas: ec2-user
   ApplicationStart:
-    - location: clean_pull_and_run.sh
+    - location: run.sh
+      runas: ec2-user
+  ApplicationStop:
+    - location: scripts/clean.sh
       runas: ec2-user
