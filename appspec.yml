@@ -6,10 +6,10 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/install_docker.sh
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: run.sh
-      runas: ec2-user
+      runas: root
   ApplicationStop:
     - location: scripts/clean.sh
-      runas: ec2-user
+      runas: root
